@@ -1,0 +1,89 @@
+.background {
+    background-color: black;
+    
+} 
+.center{ text-align: center; }
+.bold { font-weight: bold; }
+.italic { font-style: italic;}
+.hr { margin-top: 0pc;
+    margin bottom: 0pc ;}
+.resumefields {
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+.ref {
+    font-size: 14pt;
+}
+a.ex1:hover, a.ex1:active {
+    color: rgb(173, 173, 173);
+}
+.whitetext{ color: #c8c8c8 ;}
+.greytext{color: rgb(136, 135, 135);}
+
+.media1 {
+    width: 100%;
+  height: auto;
+  padding-right: 150px;
+}
+.media2 {
+    width: 100%;
+  height: auto;
+  padding-left: 150px;
+}
+.caption1 { text-align: left ;
+    color: #c8c8c8;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-style: italic;;}
+ .filmdesc {
+    font-family: neue-haas-grotesk-text, sans-serif;
+    color: #c8c8c8; 
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-thickness: initial;
+    text-decoration-style: initial;
+    text-decoration-color: initial;}  
+    
+
+.caption2 { text-align: right ;
+    color: #c8c8c8;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-style: italic;}
+
+
+@media (min-width: 992px) {
+    #mainNav {
+      transition: background-color 0.2s;
+      /* Force Hardware Acceleration in WebKit */
+      transform: translate3d(0, 0, 0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+    #mainNav.is-fixed {
+      /* when the user scrolls down, we hide the header right above the viewport */
+      position: fixed;
+      top: -83px;
+      transition: transform 0.2s;
+      border-bottom: 1px solid white;
+      background-color: rgba(24, 24, 24, 0.9);
+    }
+    #mainNav.is-fixed .navbar-brand {
+      color: #212529;
+    }
+    #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
+      color: #0085A1;
+    }
+    #mainNav.is-fixed .navbar-nav > li.nav-item > a {
+      color: white;
+    }
+    #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
+      color: #0085A1;
+    }
+    #mainNav.is-visible {
+      /* if the user changes the scrolling direction, we show the header */
+      transform: translate3d(0, 100%, 0);
+    }
+  }
+  
+ 
